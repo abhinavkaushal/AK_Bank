@@ -1,0 +1,176 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>AK BANKS</title>
+
+<link href="index.css" rel="stylesheet" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	crossorigin="anonymous"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+	integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	crossorigin="anonymous"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+	integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	crossorigin="anonymous"></script>
+
+<style>
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+
+</head>
+
+<body>
+
+	<div id="top_links">
+		<marquee style="background-color: rgb(252, 236, 21);">"No
+			carelessness until there is a cure" "जब तक दवाई नहीं तब तक ढिलाई
+			नहीं"</marquee>
+		<div id="header">
+			<h1>
+				HD - BANK<span class="style1"></span>
+			</h1>
+			<h2>Corporate Banking application</h2>
+		</div>
+<center>
+<div style="padding:20px">
+<a href="AdminLogin.html"><button class="glow-on-hover" type="button" >Admin Login</button></a>
+<a href="UserLogin.html"><button class="glow-on-hover" type="button" >User Login</button></a>
+</div>
+</center>
+
+
+<div id="footer_top">
+			<div id="footer_navigation"></div>
+			<marquee style="background-color: yellow; color: blue;">Beware of fictitious offers/ lottery winnings/ cheap funds offers</marquee>
+			<div id="footer_copyright" >
+
+				<div class="slideshow-container" style="width: 128%; height: 400px">
+					<div class="mySlides fade">
+						<img src="pictures/5.jpg" style="width: 128%; height: 400px">
+					</div>
+					<div class="mySlides fade">
+						<img src="pictures/4.jpg" style="width: 128%; height: 400px">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="pictures/3.jpg" style="width: 128%; height: 400px">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="pictures/2.jpg" style="width: 128%; height: 400px">
+					</div>
+
+					<div class="mySlides fade">
+						<img src="pictures/1.jpg" style="width: 128%; height: 400px">
+					</div>
+
+				</div>
+				<br>
+				<div style="text-align: center">
+					<span class="dot"></span> <span class="dot"></span> <span
+						class="dot"></span> <span class="dot"></span> <span class="dot"></span>
+				</div>
+				<marquee style="background-color: yellow; color: blue;">HD
+					never asks for your Card/PIN/OTP/CVV details on phone, message or
+					email. Please do not click on links received on your email or
+					mobile asking your Bank/Card details. | Attention Retail/Corporate
+					INB Users, transaction OTP will be made mandatory for all merchant
+					related transactions, hence please have your mobile varchar
+					registered if the same has not been done until now.</marquee>
+				Copyright © AK BANKS
+			</div>
+			<script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+            </script>
+
+
+		</div>
+
+
+	</div>
+
+</body>
+
+</html>
